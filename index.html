@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preston University</title>
     <link href="styles.css" rel="stylesheet">
-    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<script src="script.js"></script> 
 </head>
 <body>
     <section class="header">
         <nav>   
             <a href="index.html"><img src="Preston_images/logo.png" alt="Preston University Logo"></a>
-            <div class="nav-links">
-                <ul>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-regular fa-circle-xmark" onclick="hideMenu()"></i>   
+                <ul>          
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">COURSE</a></li>
@@ -21,7 +26,13 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-        </nav>
+                <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+         <div class="text-box"> 
+            <h1>World's Most Prestigous University</h1>
+            <p>Learning how to become a well rounded individual made simple. <br> At Preston University, we will teach you how to learn and become an elite member of society through rigorous coursework and state of the art lectures.</p>
+            <a href="" class="hero-btn">Visit us to learn more.</a>
+         </div>
     </section>
 </body>
 </html>

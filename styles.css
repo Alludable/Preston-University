@@ -290,6 +290,7 @@ h3{
     padding: 0px;
     cursor: pointer;
     display: flex;
+    transition: 0.5s;
  }    
 
  .testimonial-column img {
@@ -311,6 +312,11 @@ h3{
 
  .testimonial-column .fa {
     color:#777;
+ }
+
+ .testimonial-column:hover {
+    background: rgba(255, 236, 151, 0.7);
+    box-shadow: 0 0 30px 30px rgba(191,191,191,0.2);
  }
 
  @media(max-width:700px) {
